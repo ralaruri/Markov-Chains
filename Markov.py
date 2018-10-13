@@ -21,6 +21,8 @@ site6 = [.8, 0, 0, 0, 0, 0, .2, 0]
 site7 = [.75, 0, 0, 0, 0, 0, 0, .25]
 siteProb = [hotel, site1, site2, site3, site4, site5, site6, site7]
 
+print(site7)
+
 tour = []
 curLoc = hotel
 tour.append(siteList[0])                            # save the starting site
@@ -39,7 +41,7 @@ for i in range(5):
     tour.append(siteList[saveJ])                    #  save where we went to
     curLoc = siteProb[saveJ]                        #  load that site's probabilities
     if saveJ == 0: break                            #  back to the hotel?, then done
-    
+
 print('')
 print(tour)
 #print(time.time()-start)
